@@ -1,0 +1,22 @@
+Para compilar o typescript para javascript 
+    tsc nome do arquivo.ts
+Por padrão é gerado o código para javascript 3
+Para tornar o código mais atual é necessário passar a flag 
+    Para ajuda tsc nome do programa --help
+    tsc nome do programa --target "ES5" ou "ES6" etc
+***************************************************************************
+    vídeo para usar o npx https://www.youtube.com/watch?v=2hNYaLP3Nx0
+    npx ts-node nome do arquivo
+***************************************************************************
+Para criar o arquivo de configuração tsconfig que contém as configurações 
+de linha de comando
+    tsc --init
+Para compilar 
+    tsc
+a pasta src contém os arquivos .ts 
+no tsconfig descomentado: outDir=arquivos js, rootDir=arquivos ts
+
+Para executar o arquivo javascript
+    node nome do arquivo.js
+Para deixar o compilador rodando 
+    tsc --watch
