@@ -1,4 +1,4 @@
-class Pessoa{
+export default class Pessoa{
     nome: string;
     idade: number;
     altura: number;
@@ -16,6 +16,3 @@ class Pessoa{
         return notasTotais / notas.length;
     }
 }
-const pessoa = new Pessoa("Ronaldo",25,195);
-console.log(pessoa.toString());
-console.log(pessoa.media(5,6.8,9,10));
