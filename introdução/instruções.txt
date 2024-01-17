@@ -20,3 +20,5 @@ Para executar o arquivo javascript
     node nome do arquivo.js
 Para deixar o compilador rodando 
     tsc --watch
+Para usar o Decorator tem que habiliar no tsconfig
+"experimentalDecorators": true
