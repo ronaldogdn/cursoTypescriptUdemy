@@ -17,7 +17,7 @@ export default class DataHora{
         const ano = dataAtual.getFullYear();
         const hora = dataAtual.getHours();
         const minutos = dataAtual.getMinutes().toString().padStart(2,'0');
-        const segundos = dataAtual.getSeconds();
+        const segundos = dataAtual.getSeconds() < 10 ? "0"+dataAtual.getSeconds() : dataAtual.getSeconds();
         const doisPontos = dataAtual.getSeconds() % 2 === 0 ? ":" : " ";
 
         this.data = `${dia} ${mes} ${ano}`;
