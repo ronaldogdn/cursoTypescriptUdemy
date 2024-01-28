@@ -85,6 +85,13 @@ export default class CalculadoraControle{
     }
     
     adicionarOperador(operador: string) : void{
-        this.adicionarOperacao(operador.toString())
+        if (isNaN(Number(this.operacao.ultimaPosicao))) {
+            this.operacao.ultimaPosicao = operador;
+        } else {
+            if(this.operacao.lenght === 0){
+                this.adicionarOperacao("0");
+            }
+            this.adicionarOperacao(operador.toString())
+        }
     }
 }
