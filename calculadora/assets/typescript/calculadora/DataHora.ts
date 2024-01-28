@@ -1,6 +1,6 @@
 export default class DataHora{
     constructor (
-        private elementoData: HTMLDivElement | null = document.querySelector("#datetime > div:nth-child(2)"),
+        private elementoData: HTMLDivElement | null = document.querySelector("#datetime > div:nth-child(3)"),
         private elementoHora: HTMLDivElement | null = document.querySelector("#datetime time")
     )
     {

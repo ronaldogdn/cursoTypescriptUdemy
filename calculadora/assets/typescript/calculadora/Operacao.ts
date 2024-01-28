@@ -51,4 +51,8 @@ export default class Operacao {
     get lenght():number{
         return this.operacao.length;
     }
+    
+    get getOperacao():string[]{
+        return this.operacao;
+    }
 }

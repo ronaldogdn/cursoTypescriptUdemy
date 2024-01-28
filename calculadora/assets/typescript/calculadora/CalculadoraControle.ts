@@ -10,8 +10,8 @@ export default class CalculadoraControle{
                 this.tela.conteudo = resultado
             }
         })
-    )
-    {
+        )
+    {        
         new DataHora();
         this.eventosBotoes();
     }
@@ -71,6 +71,7 @@ export default class CalculadoraControle{
 
     adicionarOperacao(valor: string) : void{
         this.operacao.adicionar(valor);
+        this.tela.operacao = this.operacao.getOperacao;
     }
 
     adicionarNumero(numero: number): void {
@@ -82,6 +83,7 @@ export default class CalculadoraControle{
             this.operacao.ultimaPosicao = numero.toString();
         }
         this.tela.conteudo = numero.toString();
+        this.tela.operacao = this.operacao.getOperacao;
     }
     
     adicionarOperador(operador: string) : void{
